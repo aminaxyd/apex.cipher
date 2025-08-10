@@ -136,6 +136,60 @@
         padding: 12px 20px;
       }
     }
+    .email-signup {
+  margin-top: 60px;
+  text-align: center;
+  padding: 20px;
+}
+
+.email-signup h2 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+.email-signup p {
+  font-size: 0.95rem;
+  color: var(--text-muted);
+  margin-bottom: 20px;
+}
+
+.email-signup form {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.email-signup input {
+  padding: 12px 15px;
+  border-radius: 8px;
+  border: 2px solid var(--primary-color);
+  background: transparent;
+  color: var(--text-light);
+  font-size: 1rem;
+  outline: none;
+  min-width: 250px;
+}
+
+.email-signup input::placeholder {
+  color: var(--text-muted);
+}
+
+.email-signup button {
+  padding: 12px 20px;
+  border-radius: 8px;
+  background-color: var(--primary-color);
+  color: var(--bg-color);
+  font-weight: 600;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.email-signup button:hover {
+  background-color: #cc1818;
+}
+
   </style>
 </head>
 <body>
@@ -151,6 +205,14 @@
       <a href="temp1.html"><span>Business Planner</span></a>
     </nav>
   </header>
+  <section class="email-signup">
+    <h2>Stay Updated</h2>
+    <p>Enter your email to receive exclusive updates and offers.</p>
+    <form action="https://formspree.io/f/mnnzdbkl" method="POST">
+      <input type="email" name="email" placeholder="Your email address" required>
+      <button type="submit">Subscribe</button>
+    </form>
+  </section>
 
   <footer>
     © 2025 Apex Cipher. All rights reserved.
@@ -158,3 +220,4 @@
 
 </body>
 </html>
+
